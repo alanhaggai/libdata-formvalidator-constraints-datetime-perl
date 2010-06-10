@@ -1,0 +1,24 @@
+Source: libdata-formvalidator-constraints-datetime-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 7)
+Build-Depends-Indep: libdata-formvalidator-perl (>= 3.61),
+ libdatetime-format-builder-perl, libdatetime-format-strptime-perl (>= 1.00),
+ libdatetime-perl (>= 0.23), perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Alan Haggai Alavi <alanhaggai@alanhaggai.org>
+Standards-Version: 3.8.4
+Homepage: http://search.cpan.org/dist/Data-FormValidator-Constraints-DateTime/
+Vcs-Svn: svn://svn.debian.org/pkg-perl/trunk/libdata-formvalidator-constraints-datetime-perl/
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-perl/trunk/libdata-formvalidator-constraints-datetime-perl/
+
+Package: libdata-formvalidator-constraints-datetime-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}, libdata-formvalidator-perl (>= 3.61),
+ libdatetime-format-strptime-perl (>= 1.00), libdatetime-perl (>= 0.23), perl
+Description: D::FV constraints for dates and times
+ This package provides constraint routines for Data::FormValidator for dealing
+ with dates and times. It provides an easy mechanism for validating dates of
+ any format (using strptime(3)) and transforming those dates (as long as you
+ 'untaint' the fields) into valid DateTime objects, or into strings that would
+ be properly formatted for various database engines.
